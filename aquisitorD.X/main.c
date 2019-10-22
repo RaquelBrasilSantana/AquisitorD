@@ -11,9 +11,9 @@
 #define LEDVED PORTCbits.RC0
 #define LEDAMA PORTCbits.RC1
 #define LEDVEM PORTCbits.RC2
-
 char tim = 1;
 int repeat = 0;
+char var;
 void __interrupt myISR(void);
    
 void main(void) 
