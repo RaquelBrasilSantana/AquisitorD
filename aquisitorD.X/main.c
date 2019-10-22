@@ -49,13 +49,6 @@ void main(void)
        {
            putLCD(nr);
        }
-       
-
-       if (tim == 1)
-       {
-           tempatt(); 
-       }
-          
              
        switch (nr)
        {
@@ -106,4 +99,8 @@ void __interrupt myISR(void)
             repeat = 0;
         }
     }
+    if (tim == 1)
+       {
+           tempatt(); 
+       }
 }
